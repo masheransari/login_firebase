@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/imageLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Login Screen"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLogin"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Password ******"
+                android:imeActionId="@+id/login_login"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_signup_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="SignUp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_forget_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Forget Passworrd"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+<android.support.v4.widget.ContentLoadingProgressBar
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:id="@+id/progressBar_login"
+    android:visibility="gone"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    style="@style/Base.Widget.AppCompat.ProgressBar"
+    android:layout_marginBottom="10dp"/>
+</RelativeLayout>
+
