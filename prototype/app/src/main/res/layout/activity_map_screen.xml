@@ -39,7 +39,7 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.asheransari.prototype.mapScreen">
+        tools:context="com.example.asheransari.prototype.Activities.mapScreen">
         <!--<TextView-->
         <!--android:layout_width="match_parent"-->
         <!--android:text="Email: "-->

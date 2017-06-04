@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.asheransari.prototype.Activities.MainActivity;
+import com.example.asheransari.prototype.Authentication.signUp;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -50,7 +52,7 @@ public class login extends AppCompatActivity {
         forget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(login.this, forget.class);
+                Intent i = new Intent(login.this, com.example.asheransari.prototype.Authentication.forget.class);
                 startActivity(i);
             }
         });

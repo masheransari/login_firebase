@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_back"
-    tools:context="com.example.asheransari.prototype.Splash">
+    tools:context="com.example.asheransari.prototype.Authentication.Splash">
     <ImageView
         android:id="@+id/iamgeView_splash"
         android:layout_centerInParent="true"

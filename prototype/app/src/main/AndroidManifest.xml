@@ -17,23 +17,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash">
+        <activity
+            android:name=".Authentication.Splash"
+            android:label="Main Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activities.MainActivity" />
         <activity
-            android:name=".CheckOut"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".login" />
+            android:name=".Activities.CheckOut"
+            android:label="Check Out Item"
+            android:parentActivityName=".Activities.MainActivity" />
         <activity
-            android:name=".forget"
+            android:name=".login"
+            android:label="Login Account" />
+        <activity
+            android:name=".Authentication.forget"
+            android:label="Forget Password"
             android:parentActivityName=".login" />
         <activity
-            android:name=".signUp"
+            android:name=".Authentication.signUp"
+            android:label="New Account"
             android:parentActivityName=".login" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -48,13 +54,13 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".mapScreen"
+            android:name=".Activities.mapScreen"
             android:label="@string/title_activity_map_screen"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Activities.MainActivity" />
         <activity
-            android:name=".map"
+            android:name=".Activities.map"
             android:label="@string/title_activity_map"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Activities.MainActivity" />
     </application>
 
 </manifest>
